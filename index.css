@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 20;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container {
+    margin: 100 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container .step {
+    position: relative;
+    float: left;
+    width: 300px;
+}
+
+.step .circle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.step .line {
+    position: absolute;
+    top: 50%;
+    left: 51px;
+    width: 249px;
+    border: 1px solid #ccc;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step .preparing {
+    border: 1px solid black;
+    color: black;
+}
+
+.step .success {
+    border: 1px solid blue;
+    color: blue;
+}
